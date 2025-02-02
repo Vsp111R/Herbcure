@@ -1,161 +1,72 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Navbar Styling */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  /* Left section (Logo + Nav Links) */
-  .navbar-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-left .logo {
-    font-size: 26px;
-    font-weight: bold;
-    color: #2d6a4f; /* Pitch Green */
-    margin-right: 30px;
-    text-decoration: none;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-  }
-  
-  .nav-links li {
-    margin-right: 20px;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links li a:hover {
-    color: #2d6a4f; /* Pitch Green */
-  }
-  
-  /* Right section (Search + Account + Cart + Country Selector) */
-  .navbar-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-bar {
-    padding: 8px 12px;
-    margin-right: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-    width: 250px;
-    transition: border 0.3s ease;
-  }
-  
-  .search-bar:focus {
-    border-color: #2d6a4f; /* Pitch Green */
-    outline: none;
-  }
-  
-  .account-icon {
-    margin-right: 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .account-icon:hover {
-    color: #2d6a4f; /* Pitch Green */
-  }
-  
-  .cart-icon {
-    margin-right: 20px;
-    text-decoration: none;
-  }
-  
-  .cart-icon-img {
-    width: 25px;
-    height: 25px;
-  }
-  
-  .country-selector {
-    padding: 8px 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: white;
-    color: #333;
-    font-size: 14px;
-  }
-  
-  .country-selector option {
-    padding: 8px;
-  }
-  
-  /* Bottom Navbar Styling */
-  .bottom-navbar {
-    background-color: #f8f8f8;
-    padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-top: 1px solid #ddd;
-  }
-  
-  .bottom-nav-links {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-  }
-  
-  .bottom-nav-links li {
-    margin: 0 30px;
-  }
-  
-  .bottom-nav-links li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .bottom-nav-links li a:hover {
-    color: #2d6a4f; /* Pitch Green */
-  }
-  
-  .cart-icon {
-    margin-right: 20px;
-    text-decoration: none;
-  }
-  
-  .cart-icon-img {
-    width: 25px; 
-    height: 25px; 
-  }
-
-.logo h1 {
-  font-size: 24px;
-  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.search-bar input {
-  padding: 10px;
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left section (Logo + Nav Links) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left .logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2d6a4f; /* Pitch Green */
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+.nav-links-div {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #2d6a4f;
+  font-weight: 500;
+}
+
+.nav-links:hover {
+  color: #16a085;
+}
+
+/* Right section (Search + Account + Cart) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 8px 12px;
+  margin-right: 20px;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  border: none;
-  width: 300px;
+  font-size: 14px;
+  width: 250px;
+  transition: border 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #2d6a4f;
+  outline: none;
 }
 
 .header-icons {
@@ -172,20 +83,95 @@
   color: #16a085;
 }
 
-.nav-links-div {
-  gap: 2rem;
+/* Bottom Navbar Styling */
+.bottom-navbar {
+  background-color: #b0dfd5;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #ddd;
+}
+
+.bottom-nav-links {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  list-style: none;
 }
 
-.nav-links {
+.bottom-nav-links li {
+  margin: 0 30px;
+}
+
+.bottom-nav-links li a {
   text-decoration: none;
-color: #2d6a4f;
-font-weight: 500;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.nav-links:hover {
-  color: #16a085;
+.bottom-nav-links li a:hover {
+  color: #2d6a4f;
 }
 
-  
+/* Category Section Styling */
+.category-section {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 5px 5px;
+  background-color: #143d35;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.category-item {
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ede6e6;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.category-item:hover {
+  color: #d2e7dd;
+}
+
+.category-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(199, 191, 191, 0.085);
+}
+
+.category-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* Discount Strip */
+.discount-strip {
+  background-color: #2d6a4f; /* Bright Yellow for Highlight */
+  color: #ffffff; /* Green Text */
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 1px; /* Adjusted padding to reduce size */
+  overflow: hidden;
+  white-space: nowrap; /* Fixed white-space property */
+  position: relative;
+}
+
+.discount-strip p {
+  display: inline-block;
+  color:#e08f80;
+  font-size: 16px; /* Reduced font size */
+  animation: scrollText 17s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(70%);
+  }
+  70% {
+    transform: translateX(-70%);
+  }
+}

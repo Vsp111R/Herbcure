@@ -1,46 +1,32 @@
 import React, { useState } from 'react';
-import './Signup.css';  // Import the CSS file for styles
+import './Login.css';
 
-const Signup = () => {
+const Login = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    password: '',
+    username: "",
+    email: "",
+    password: "",
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData); // You can process the form data here
+    console.log("Login Data:", formData);
   };
 
   return (
-    <div className="signup-container">
-      <h1>Sign Up</h1>
+    <div className="login-container">
+      <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          name="firstName"
+          name="username"
           className="input-field"
-          placeholder="First Name"
-          value={formData.firstName}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="text"
-          name="lastName"
-          className="input-field"
-          placeholder="Last Name"
-          value={formData.lastName}
+          placeholder="Username"
+          value={formData.username}
           onChange={handleChange}
           required
         />
@@ -62,10 +48,10 @@ const Signup = () => {
           onChange={handleChange}
           required
         />
-        <button type="submit" className="signup-btn">Sign Up</button>
+        <button type="submit" className="login-btn">Login</button>
       </form>
     </div>
   );
-};
+}
 
-export default Signup;
+export default Login;

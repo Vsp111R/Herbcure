@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-const shop = () => {
-  return (
-    <div>
-      Shop Page
-    </div>
-  )
-}
+const Shop = () => {
+  const navigate = useNavigate();
 
-export default shop
+  useEffect(() => {
+    navigate("/"); // Redirect to Home page
+  }, [navigate]);
+
+  return null;
+};
+
+export default Shop;

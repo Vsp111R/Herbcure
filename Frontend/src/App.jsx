@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import ClipLoader from "react-spinners/ClipLoader";
 import Navbar from "./Navbar";
-import Footer from "./Footer.jsx";
+import Footer from "./Footer.jsx"; // ✅ Footer is added here
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./AppRoutes.jsx";
 
@@ -26,9 +26,13 @@ function App() {
         </div>
       ) : (
         <BrowserRouter>
-          <Navbar />
-          <AppRoutes />
-          <Footer />
+          <div className="main-container">
+            <Navbar />
+            <div className="content">
+              <AppRoutes />
+            </div>
+            <Footer /> {/* ✅ Footer is added ONLY ONCE here */}
+          </div>
         </BrowserRouter>
       )}
     </>

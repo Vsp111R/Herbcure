@@ -1,0 +1,113 @@
+.contact-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 3rem 1.5rem;
+    background: #f4f7f6;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-title {
+    text-align: center;
+    color: #143d35;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-section {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-section:hover {
+    transform: translateY(-3px);
+  }
+  
+  .contact-section h3 {
+    color: #216d5e;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .contact-details p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .icon {
+    color: #216d5e;
+    width: 22px;
+    height: 22px;
+  }
+  
+  .whatsapp-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25d366;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .whatsapp-link:hover {
+    background-color: #1da851;
+  }
+  
+  .ai-chat-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #216d5e;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .ai-chat-btn:hover {
+    background-color: #1a5548;
+  }
+  
+  .download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #143d35;
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .download-btn:hover {
+    background: #0f2b27;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 2rem 1rem;
+    }
+  
+    .contact-title {
+      font-size: 1.8rem;
+    }
+  
+    .contact-section {
+      padding: 1rem;
+    }
+  }
+  

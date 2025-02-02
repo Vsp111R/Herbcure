@@ -1,0 +1,143 @@
+.home-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Discount Banner */
+.discount-banner {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.discount-banner img {
+  width: 100%;
+  max-width: 400px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Product Grid (Ensures Items Align in Rows) */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 15px;
+  border: 1.5px solid #c1e56b;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;  /* Ensures each item has a proper width */
+  position: relative; /* Ensures that the banner is positioned relative to this card */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Product Name */
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Product Seller */
+.product-seller {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Price & Discount Styling */
+.product-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discounted-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+}
+
+.original-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: red;
+  margin-left: 5px;
+}
+
+.discount {
+  font-size: 14px;
+  font-weight: bold;
+  background: rgba(255, 0, 0, 0.8);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  background: #f78001;
+}
+.trusted-banner {
+  background-color: #28a745; /* Green color */
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;  /* Distance from the top of the image */
+  right: 10px; /* Distance from the right of the image */
+  z-index: 10; /* Ensure it's above the image */
+}
+
+.product-rating {
+  font-size: 14px;
+  color: #ff9800;
+  margin-top: 5px;
+}

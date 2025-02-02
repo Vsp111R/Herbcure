@@ -1,0 +1,82 @@
+.plant-info-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .plant-title {
+    color: #2c5f2d;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .plant-scientific-name {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .plant-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .plant-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #2c5f2d;
+    margin-bottom: 10px;
+  }
+  
+  .plant-benefits {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .plant-benefits li {
+    background-color: #e3f2e1;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #2c5f2d;
+  }
+  .plant-list-container {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .plant-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .plant-item {
+    margin: 10px 0;
+  }
+  
+  .plant-link {
+    text-decoration: none;
+    color: #28a745;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .plant-link:hover {
+    color: #f78001;
+  }
+  

@@ -1,0 +1,63 @@
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  color: #143d35; /* Pitch Green */
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #143d35; /* Pitch Green */
+  margin-top: 2rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Unordered List */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* List Items */
+ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #143d35; /* Pitch Green */
+}
+
+/* Links */
+a {
+  color: #c1e56b; /* Pitch Green */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f85b38; /* Bright Orange for hover effect */
+  text-decoration: underline;
+}
+
+/* Footer Section */
+.footer-bg {
+  background-color: #143d35; /* Pitch Green */
+  color: #ffffff; /* White text */
+}
+
+/* Footer Links */
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #f85b38; /* Bright Orange hover */
+}
+
+/* Footer Social Media Icons */
+.footer-icon:hover {
+  color: #f85b38; /* Bright Orange for hover effect */
+}
